@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 80vw;
+    margin: auto;
+    background-color: #d1ffffd8;
+    color: #333;
+}
+
+header {
+    width: 100vw;
+    height: 50px;
+    margin: auto;
+}
+
+h1 {
+    width: 70%;
+    margin: auto;
+}
+
+nav{
+    align-content: center;
+    margin: auto, 50px;
+    height: 20px;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 10px; /* Adds spacing between list items */
+    margin: auto, 0;
+}

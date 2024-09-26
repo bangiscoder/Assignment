@@ -1,0 +1,241 @@
+/* General styling */
+*, *::before, *::after {
+    box-sizing: border-box; /* Include padding and border in element's width/height */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #364567;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 40;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.articlesCon {
+    display: flexbox;
+    width: 100%;
+    padding: 20px;
+}
+
+article {
+    margin: auto;
+    padding: 5px;
+    box-shadow: inset black 2px;
+}
+
+footer {
+    background-color: #006400;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Author section */
+.authorCon {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profilePicCon img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.arthourName h1 {
+    font-size: 1.5rem;
+    color: #006400;
+}
+
+.metaData {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.metaData h3 {
+    display: inline;
+    margin-right: 10px;
+}
+
+.metaData span {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Main article styling */
+.articlePost {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.postTitle {
+    font-size: 1.8rem;
+    color: #006400;
+    margin-bottom: 10px;
+}
+
+.articlePost h2 {
+    color: #006400;
+    margin-top: 20px;
+}
+
+.articlePost p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.articlePost ul.skillSet {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.articlePost ul.skillSet li {
+    margin-bottom: 8px;
+}
+
+.friends ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+/* Call to action */
+.callToAction {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Contact Form styling */
+.contactForm {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contactForm input[type="submit"] {
+    background-color: #006400;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactForm input[type="submit"]:hover {
+    background-color: #228b22;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .authorCon, .callToAction, .contactForm {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+
+    .profilePicCon img {
+        margin-bottom: 10px;
+    }
+    .desktopNav, .mobileNavContainer{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .authorCon, .callToAction, .contactForm {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+
+    .profilePicCon img {
+        margin-bottom: 10px;
+    }
+    .mobileNavContainer, .mobileNavDisplayBtn{
+        display: none;
+    }
+}
