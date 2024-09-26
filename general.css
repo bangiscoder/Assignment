@@ -24,6 +24,26 @@ header {
     align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 999;
+    text-align: center;
+}
+
+section.hero {
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    background-attachment: fixed;
+    background-color: #ccc;
+    align-items: center;
+    text-align: center;
+}
+
+div.socialCon, div.contact {
+    display: flex;
+}
+
+.social {
+    border-radius: 50% solid red 2px;
 }
 
 .material-symbols-outlined {
@@ -74,7 +94,7 @@ article {
 }
 
 footer {
-    background-color: #006400;
+    background-color: #364567;
     padding: 20px;
     color: white;
     text-align: center;
@@ -223,6 +243,15 @@ footer p {
     .desktopNav, .mobileNavContainer{
         display: none;
     }
+}
+
+/* CSS code for the Google Font Icon */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 @media (min-width: 768px) {
