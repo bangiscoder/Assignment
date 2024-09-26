@@ -38,8 +38,10 @@ section.hero {
     text-align: center;
 }
 
-div.socialCon, div.contact {
-    display: flex;
+div.contact {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
 }
 
 figure.profilePic img  {
@@ -47,7 +49,12 @@ figure.profilePic img  {
     width: 34px;
 }
 .social {
-    border-radius: 50% solid red 2px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 10px;
 }
 
 .material-symbols-outlined {
@@ -247,6 +254,16 @@ footer p {
     .desktopNav, .mobileNavContainer{
         display: none;
     }
+
+    figure.profilePic img  {
+        height: 34px;
+        width: 34px;
+    }
+
+    div.contact {
+        display: flexbox;
+        width: 100%;
+    }
 }
 
 /* CSS code for the Google Font Icon */
@@ -263,10 +280,6 @@ footer p {
         flex-direction: column;
         text-align: center;
         width: 90%;
-    }
-
-    .profilePicCon img {
-        margin-bottom: 10px;
     }
     .mobileNavContainer, .mobileNavDisplayBtn{
         display: none;
