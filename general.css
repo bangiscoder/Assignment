@@ -42,6 +42,10 @@ div.socialCon, div.contact {
     display: flex;
 }
 
+figure.profilePic img  {
+    height: 34px;
+    width: 34px;
+}
 .social {
     border-radius: 50% solid red 2px;
 }
