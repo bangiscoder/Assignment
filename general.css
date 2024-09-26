@@ -57,6 +57,17 @@ figure.profilePic img  {
     margin: 10px;
 }
 
+
+article {
+    width: 700px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 2px 4px inset rgb(134, 132, 132);
+    align-items: center;
+    text-align: center;
+}
+
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -96,12 +107,6 @@ nav a:hover {
     display: flexbox;
     width: 100%;
     padding: 20px;
-}
-
-article {
-    margin: auto;
-    padding: 5px;
-    box-shadow: inset black 2px;
 }
 
 footer {
@@ -255,7 +260,7 @@ footer p {
         display: none;
     }
 
-    figure.profilePic img  {
+    figure.profilePic {
         height: 34px;
         width: 34px;
     }
@@ -263,6 +268,32 @@ footer p {
     div.contact {
         display: flexbox;
         width: 100%;
+    }
+
+    section.hero {
+        background-position: center;
+        height: 50vh;
+        width: 100vw;
+        padding: 20px;
+        background-attachment: fixed;
+        background-color: #ccc;
+        align-items: center;
+        text-align: center;
+    }
+
+    img.heroPic {
+        height: 80px;
+        width: 80px;
+    }
+
+    article {
+        width: 90%;
+        margin: auto;
+        padding: 5px;
+        border-radius: 15px;
+        box-shadow: 2px 4px inset rgb(134, 132, 132);
+        align-items: center;
+        text-align: center;
     }
 }
 
