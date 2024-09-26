@@ -29,7 +29,7 @@ header {
 
 section.hero {
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     padding: 20px;
     background-attachment: fixed;
@@ -57,10 +57,16 @@ figure.profilePic img  {
     margin: 10px;
 }
 
+section.articlesCon {
+    background-color: aliceblue;
+    width: 90%;
+    margin: auto;
+}
+
 
 article {
     width: 700px;
-    margin: auto;
+    margin: 20px auto;
     padding: 5px;
     border-radius: 15px;
     box-shadow: 2px 4px inset rgb(134, 132, 132);
@@ -261,8 +267,8 @@ footer p {
     }
 
     figure.profilePic {
-        height: 34px;
-        width: 34px;
+        height: 100px;
+        width: 100px;
     }
 
     div.contact {
@@ -272,7 +278,7 @@ footer p {
 
     section.hero {
         background-position: center;
-        height: 50vh;
+        height: auto;
         width: 100vw;
         padding: 20px;
         background-attachment: fixed;
@@ -282,8 +288,9 @@ footer p {
     }
 
     img.heroPic {
-        height: 80px;
-        width: 80px;
+        height: 200px;
+        width: 200px;
+
     }
 
     article {
